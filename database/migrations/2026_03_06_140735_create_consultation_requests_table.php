@@ -12,8 +12,8 @@ return new class extends Migration
             $table->id();
             $table->string('full_name');
             $table->string('company_name')->nullable();
-            $table->string('phone');
-            $table->string('email');
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->string('service_type');
             $table->text('project_details');
             $table->timestamps();
